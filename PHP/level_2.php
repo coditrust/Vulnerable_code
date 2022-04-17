@@ -7,7 +7,7 @@ if ($mysqli -> connect_errno) {
   exit();  
 }
 
-$rep = str_replace('-', '', $_POST['name']);
+$rep = str_replace('-', '', $_GET['name']);
 
 // Perform query  
 if ($result = $mysqli -> query("SELECT * FROM Persons WHERE name=".$rep)) {  
