@@ -17,3 +17,11 @@
 
 
 
+## Level 3
+
+**Vulnerability:** Reflected XSS (Cross Site Scripting)
+
+**Exploit :** `/Vulnerable_code/PHP/XSS/level_3.html?default=<script>alert(1)</script>`
+
+**Impact:** Execute arbitrary Javascript code on Web Browser.
+
