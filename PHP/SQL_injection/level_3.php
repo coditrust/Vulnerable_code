@@ -22,7 +22,7 @@ if ($mysqli -> connect_errno) {
 $login = deleteBadChars($_GET['login']);
 $password = deleteBadChars($_GET['password']);
 
-$req = "SELECT * FROM Persons WHERE login='".$login."' AND password='".$password."'";
+$req = "SELECT * FROM Persons WHERE login='".$login."' AND password=MD5('".$password."')";
 $result = $mysqli->query($req);
 
 if ($result == false ) {
